@@ -1,0 +1,730 @@
+[
+  {
+    "name": "typical financed cabin",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "650000",
+        "down_payment_pct": "0.20",
+        "interest_rate": "0.0699",
+        "mortgage_years": 30,
+        "closing_costs_pct": "0.03"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0",
+        "annual_re_appreciation_pct": "0.03",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "100000"
+          },
+          "mid": {
+            "forecasted_revenue": "120000"
+          },
+          "high": {
+            "forecasted_revenue": "140000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.20",
+        "sla_multiplier_pct": "0.25",
+        "bonus_amount_pct": "0.60",
+        "tax_rate_pct": "0.37"
+      },
+      "optimization_items": [
+        {
+          "category": "Furniture",
+          "total_price": "40000"
+        },
+        {
+          "category": "Hot tub",
+          "total_price": "9500"
+        }
+      ],
+      "operating_expenses": [
+        {
+          "expense_name": "Utilities",
+          "monthly_amount": "650"
+        },
+        {
+          "expense_name": "Insurance",
+          "monthly_amount": "300"
+        },
+        {
+          "expense_name": "Cleaning",
+          "monthly_amount": "900"
+        }
+      ]
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "520000.00",
+        "interest_rate": "0.0699",
+        "mortgage_years": 30,
+        "purchase_price": "650000",
+        "down_payment_pct": "0.20",
+        "closing_costs_pct": "0.03",
+        "down_payment_amount": "130000.00",
+        "closing_costs_amount": "19500.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.1870",
+          "forecasted_revenue": "100000.00",
+          "principal_pay_down": "5292.40",
+          "debt_service_annual": "41472.98",
+          "net_operating_income": "78688.00",
+          "annual_free_cash_flow": "37215.02",
+          "annual_re_appreciation": "19500.00",
+          "operating_expenses_annual": "21312.00",
+          "annual_total_re_return_pct": "0.3116"
+        },
+        "mid": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.2831",
+          "forecasted_revenue": "120000.00",
+          "principal_pay_down": "5292.40",
+          "debt_service_annual": "41472.98",
+          "net_operating_income": "97800.00",
+          "annual_free_cash_flow": "56327.02",
+          "annual_re_appreciation": "19500.00",
+          "operating_expenses_annual": "22200.00",
+          "annual_total_re_return_pct": "0.4076"
+        },
+        "high": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.3791",
+          "forecasted_revenue": "140000.00",
+          "principal_pay_down": "5292.40",
+          "debt_service_annual": "41472.98",
+          "net_operating_income": "116912.00",
+          "annual_free_cash_flow": "75439.02",
+          "annual_re_appreciation": "19500.00",
+          "operating_expenses_annual": "23088.00",
+          "annual_total_re_return_pct": "0.5037"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "0.3458",
+        "mid_pct": "0.4419",
+        "high_pct": "0.5379"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.2000",
+        "sla_multiplier_pct": "0.2500",
+        "improvement_basis": "569500.00",
+        "estimated_short_life_assets": "142375.00",
+        "bonus_amount_pct": "0.6000",
+        "tax_rate_pct": "0.3700",
+        "y1_loss_from_depreciation": "85425.00",
+        "tax_savings": "31607.25"
+      },
+      "optimization_total": "49500.00",
+      "operating_expense_total": "1850.00",
+      "total_oop": "199000.00",
+      "prr": "0.1846",
+      "l_cash_on_cash": "0.1870",
+      "m_cash_on_cash": "0.2831",
+      "h_cash_on_cash": "0.3791"
+    }
+  },
+  {
+    "name": "co-hosted with 15% fee",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "420000",
+        "down_payment_pct": "0.25",
+        "interest_rate": "0.0725",
+        "mortgage_years": 30,
+        "closing_costs_pct": "0.025"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0.15",
+        "annual_re_appreciation_pct": "0.04",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "70000"
+          },
+          "mid": {
+            "forecasted_revenue": "88000"
+          },
+          "high": {
+            "forecasted_revenue": "101000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.20",
+        "sla_multiplier_pct": "0.25",
+        "bonus_amount_pct": "0.60",
+        "tax_rate_pct": "0.37"
+      },
+      "optimization_items": [
+        {
+          "category": "Furniture",
+          "total_price": "28000"
+        }
+      ],
+      "operating_expenses": [
+        {
+          "expense_name": "Utilities",
+          "monthly_amount": "420.50"
+        },
+        {
+          "expense_name": "Software",
+          "monthly_amount": "89.99"
+        }
+      ]
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "315000.00",
+        "interest_rate": "0.0725",
+        "mortgage_years": 30,
+        "purchase_price": "420000",
+        "down_payment_pct": "0.25",
+        "closing_costs_pct": "0.025",
+        "down_payment_amount": "105000.00",
+        "closing_costs_amount": "10500.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "10500.00",
+          "cash_on_cash_pct": "0.1940",
+          "forecasted_revenue": "70000.00",
+          "principal_pay_down": "3048.75",
+          "debt_service_annual": "25786.26",
+          "net_operating_income": "53619.16",
+          "annual_free_cash_flow": "27832.89",
+          "annual_re_appreciation": "16800.00",
+          "operating_expenses_annual": "5880.84",
+          "annual_total_re_return_pct": "0.3323"
+        },
+        "mid": {
+          "co_hosting_fee": "13200.00",
+          "cash_on_cash_pct": "0.2989",
+          "forecasted_revenue": "88000.00",
+          "principal_pay_down": "3048.75",
+          "debt_service_annual": "25786.26",
+          "net_operating_income": "68674.12",
+          "annual_free_cash_flow": "42887.86",
+          "annual_re_appreciation": "16800.00",
+          "operating_expenses_annual": "6125.88",
+          "annual_total_re_return_pct": "0.4372"
+        },
+        "high": {
+          "co_hosting_fee": "15150.00",
+          "cash_on_cash_pct": "0.3742",
+          "forecasted_revenue": "101000.00",
+          "principal_pay_down": "3048.75",
+          "debt_service_annual": "25786.26",
+          "net_operating_income": "79479.08",
+          "annual_free_cash_flow": "53692.82",
+          "annual_re_appreciation": "16800.00",
+          "operating_expenses_annual": "6370.92",
+          "annual_total_re_return_pct": "0.5125"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "0.3347",
+        "mid_pct": "0.4397",
+        "high_pct": "0.5149"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.2000",
+        "sla_multiplier_pct": "0.2500",
+        "improvement_basis": "364000.00",
+        "estimated_short_life_assets": "91000.00",
+        "bonus_amount_pct": "0.6000",
+        "tax_rate_pct": "0.3700",
+        "y1_loss_from_depreciation": "54600.00",
+        "tax_savings": "20202.00"
+      },
+      "optimization_total": "28000.00",
+      "operating_expense_total": "510.49",
+      "total_oop": "143500.00",
+      "prr": "0.2095",
+      "l_cash_on_cash": "0.1940",
+      "m_cash_on_cash": "0.2989",
+      "h_cash_on_cash": "0.3742"
+    }
+  },
+  {
+    "name": "zero-interest loan",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "500000",
+        "down_payment_pct": "0.10",
+        "interest_rate": "0",
+        "mortgage_years": 15,
+        "closing_costs_pct": "0.02"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0.10",
+        "annual_re_appreciation_pct": "0",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "80000"
+          },
+          "mid": {
+            "forecasted_revenue": "95000"
+          },
+          "high": {
+            "forecasted_revenue": "110000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.15",
+        "sla_multiplier_pct": "0.30",
+        "bonus_amount_pct": "1",
+        "tax_rate_pct": "0.24"
+      },
+      "optimization_items": [],
+      "operating_expenses": [
+        {
+          "expense_name": "Utilities",
+          "monthly_amount": "500"
+        }
+      ]
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "450000.00",
+        "interest_rate": "0",
+        "mortgage_years": 15,
+        "purchase_price": "500000",
+        "down_payment_pct": "0.10",
+        "closing_costs_pct": "0.02",
+        "down_payment_amount": "50000.00",
+        "closing_costs_amount": "10000.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "8000.00",
+          "cash_on_cash_pct": "0.6040",
+          "forecasted_revenue": "80000.00",
+          "principal_pay_down": "30000.00",
+          "debt_service_annual": "30000.00",
+          "net_operating_income": "66240.00",
+          "annual_free_cash_flow": "36240.00",
+          "annual_re_appreciation": "0.00",
+          "operating_expenses_annual": "5760.00",
+          "annual_total_re_return_pct": "1.1040"
+        },
+        "mid": {
+          "co_hosting_fee": "9500.00",
+          "cash_on_cash_pct": "0.8250",
+          "forecasted_revenue": "95000.00",
+          "principal_pay_down": "30000.00",
+          "debt_service_annual": "30000.00",
+          "net_operating_income": "79500.00",
+          "annual_free_cash_flow": "49500.00",
+          "annual_re_appreciation": "0.00",
+          "operating_expenses_annual": "6000.00",
+          "annual_total_re_return_pct": "1.3250"
+        },
+        "high": {
+          "co_hosting_fee": "11000.00",
+          "cash_on_cash_pct": "1.0460",
+          "forecasted_revenue": "110000.00",
+          "principal_pay_down": "30000.00",
+          "debt_service_annual": "30000.00",
+          "net_operating_income": "92760.00",
+          "annual_free_cash_flow": "62760.00",
+          "annual_re_appreciation": "0.00",
+          "operating_expenses_annual": "6240.00",
+          "annual_total_re_return_pct": "1.5460"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "1.1140",
+        "mid_pct": "1.3350",
+        "high_pct": "1.5560"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.1500",
+        "sla_multiplier_pct": "0.3000",
+        "improvement_basis": "425000.00",
+        "estimated_short_life_assets": "127500.00",
+        "bonus_amount_pct": "1.0000",
+        "tax_rate_pct": "0.2400",
+        "y1_loss_from_depreciation": "127500.00",
+        "tax_savings": "30600.00"
+      },
+      "optimization_total": null,
+      "operating_expense_total": "500.00",
+      "total_oop": "60000.00",
+      "prr": "0.1900",
+      "l_cash_on_cash": "0.6040",
+      "m_cash_on_cash": "0.8250",
+      "h_cash_on_cash": "1.0460"
+    }
+  },
+  {
+    "name": "all cash, no operating expenses",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "310000",
+        "down_payment_pct": "1",
+        "interest_rate": "0.065",
+        "mortgage_years": 30,
+        "closing_costs_pct": "0.03"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0",
+        "annual_re_appreciation_pct": "0.025",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "40000"
+          },
+          "mid": {
+            "forecasted_revenue": "52000"
+          },
+          "high": {
+            "forecasted_revenue": "61000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.20",
+        "sla_multiplier_pct": "0.25",
+        "bonus_amount_pct": "0.60",
+        "tax_rate_pct": "0.37"
+      },
+      "optimization_items": [
+        {
+          "category": "Game room",
+          "total_price": "15000"
+        }
+      ],
+      "operating_expenses": []
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "0.00",
+        "interest_rate": "0.065",
+        "mortgage_years": 30,
+        "purchase_price": "310000",
+        "down_payment_pct": "1",
+        "closing_costs_pct": "0.03",
+        "down_payment_amount": "310000.00",
+        "closing_costs_amount": "9300.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.1197",
+          "forecasted_revenue": "40000.00",
+          "principal_pay_down": "0.00",
+          "debt_service_annual": "0.00",
+          "net_operating_income": "40000.00",
+          "annual_free_cash_flow": "40000.00",
+          "annual_re_appreciation": "7750.00",
+          "operating_expenses_annual": "0.00",
+          "annual_total_re_return_pct": "0.1428"
+        },
+        "mid": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.1555",
+          "forecasted_revenue": "52000.00",
+          "principal_pay_down": "0.00",
+          "debt_service_annual": "0.00",
+          "net_operating_income": "52000.00",
+          "annual_free_cash_flow": "52000.00",
+          "annual_re_appreciation": "7750.00",
+          "operating_expenses_annual": "0.00",
+          "annual_total_re_return_pct": "0.1787"
+        },
+        "high": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "0.1825",
+          "forecasted_revenue": "61000.00",
+          "principal_pay_down": "0.00",
+          "debt_service_annual": "0.00",
+          "net_operating_income": "61000.00",
+          "annual_free_cash_flow": "61000.00",
+          "annual_re_appreciation": "7750.00",
+          "operating_expenses_annual": "0.00",
+          "annual_total_re_return_pct": "0.2057"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "0.1633",
+        "mid_pct": "0.1992",
+        "high_pct": "0.2261"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.2000",
+        "sla_multiplier_pct": "0.2500",
+        "improvement_basis": "263000.00",
+        "estimated_short_life_assets": "65750.00",
+        "bonus_amount_pct": "0.6000",
+        "tax_rate_pct": "0.3700",
+        "y1_loss_from_depreciation": "39450.00",
+        "tax_savings": "14596.50"
+      },
+      "optimization_total": "15000.00",
+      "operating_expense_total": null,
+      "total_oop": "334300.00",
+      "prr": "0.1677",
+      "l_cash_on_cash": "0.1197",
+      "m_cash_on_cash": "0.1555",
+      "h_cash_on_cash": "0.1825"
+    }
+  },
+  {
+    "name": "short loan, high rate",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "899000",
+        "down_payment_pct": "0.35",
+        "interest_rate": "0.0875",
+        "mortgage_years": 10,
+        "closing_costs_pct": "0.04"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0.20",
+        "annual_re_appreciation_pct": "0.05",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "150000"
+          },
+          "mid": {
+            "forecasted_revenue": "185000"
+          },
+          "high": {
+            "forecasted_revenue": "210000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.25",
+        "sla_multiplier_pct": "0.20",
+        "bonus_amount_pct": "0.80",
+        "tax_rate_pct": "0.32"
+      },
+      "optimization_items": [
+        {
+          "category": "Pool",
+          "total_price": "65000"
+        },
+        {
+          "category": "Furniture",
+          "total_price": "55000"
+        },
+        {
+          "category": "Decor",
+          "total_price": "7250.75"
+        }
+      ],
+      "operating_expenses": [
+        {
+          "expense_name": "Mortgage insurance",
+          "monthly_amount": "210"
+        },
+        {
+          "expense_name": "Utilities",
+          "monthly_amount": "1100"
+        },
+        {
+          "expense_name": "Supplies",
+          "monthly_amount": "333.33"
+        }
+      ]
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "584350.00",
+        "interest_rate": "0.0875",
+        "mortgage_years": 10,
+        "purchase_price": "899000",
+        "down_payment_pct": "0.35",
+        "closing_costs_pct": "0.04",
+        "down_payment_amount": "314650.00",
+        "closing_costs_amount": "35960.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "30000.00",
+          "cash_on_cash_pct": "0.0276",
+          "forecasted_revenue": "150000.00",
+          "principal_pay_down": "38261.28",
+          "debt_service_annual": "87881.62",
+          "net_operating_income": "101068.84",
+          "annual_free_cash_flow": "13187.21",
+          "annual_re_appreciation": "44950.00",
+          "operating_expenses_annual": "18931.16",
+          "annual_total_re_return_pct": "0.2017"
+        },
+        "mid": {
+          "co_hosting_fee": "37000.00",
+          "cash_on_cash_pct": "0.0845",
+          "forecasted_revenue": "185000.00",
+          "principal_pay_down": "38261.28",
+          "debt_service_annual": "87881.62",
+          "net_operating_income": "128280.04",
+          "annual_free_cash_flow": "40398.42",
+          "annual_re_appreciation": "44950.00",
+          "operating_expenses_annual": "19719.96",
+          "annual_total_re_return_pct": "0.2587"
+        },
+        "high": {
+          "co_hosting_fee": "42000.00",
+          "cash_on_cash_pct": "0.1247",
+          "forecasted_revenue": "210000.00",
+          "principal_pay_down": "38261.28",
+          "debt_service_annual": "87881.62",
+          "net_operating_income": "147491.24",
+          "annual_free_cash_flow": "59609.62",
+          "annual_re_appreciation": "44950.00",
+          "operating_expenses_annual": "20508.76",
+          "annual_total_re_return_pct": "0.2989"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "0.1135",
+        "mid_pct": "0.1704",
+        "high_pct": "0.2106"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.2500",
+        "sla_multiplier_pct": "0.2000",
+        "improvement_basis": "801500.75",
+        "estimated_short_life_assets": "160300.15",
+        "bonus_amount_pct": "0.8000",
+        "tax_rate_pct": "0.3200",
+        "y1_loss_from_depreciation": "128240.12",
+        "tax_savings": "41036.84"
+      },
+      "optimization_total": "127250.75",
+      "operating_expense_total": "1643.33",
+      "total_oop": "477860.75",
+      "prr": "0.2058",
+      "l_cash_on_cash": "0.0276",
+      "m_cash_on_cash": "0.0845",
+      "h_cash_on_cash": "0.1247"
+    }
+  },
+  {
+    "name": "low revenue, negative cash flow",
+    "input": {
+      "purchase_details": {
+        "purchase_price": "725000",
+        "down_payment_pct": "0.15",
+        "interest_rate": "0.0799",
+        "mortgage_years": 30,
+        "closing_costs_pct": "0.035"
+      },
+      "forecasted_revenue": {
+        "co_hosting_fee_pct": "0",
+        "annual_re_appreciation_pct": "0.02",
+        "scenarios": {
+          "low": {
+            "forecasted_revenue": "30000"
+          },
+          "mid": {
+            "forecasted_revenue": "45000"
+          },
+          "high": {
+            "forecasted_revenue": "60000"
+          }
+        }
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.20",
+        "sla_multiplier_pct": "0.25",
+        "bonus_amount_pct": "0.60",
+        "tax_rate_pct": "0.37"
+      },
+      "optimization_items": [
+        {
+          "category": "Furniture",
+          "total_price": "20000"
+        }
+      ],
+      "operating_expenses": [
+        {
+          "expense_name": "Utilities",
+          "monthly_amount": "800"
+        },
+        {
+          "expense_name": "Insurance",
+          "monthly_amount": "450"
+        }
+      ]
+    },
+    "output": {
+      "purchase_details": {
+        "loan_amount": "616250.00",
+        "interest_rate": "0.0799",
+        "mortgage_years": 30,
+        "purchase_price": "725000",
+        "down_payment_pct": "0.15",
+        "closing_costs_pct": "0.035",
+        "down_payment_amount": "108750.00",
+        "closing_costs_amount": "25375.00"
+      },
+      "scenarios": {
+        "low": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "-0.2505",
+          "forecasted_revenue": "30000.00",
+          "principal_pay_down": "5158.15",
+          "debt_service_annual": "54210.35",
+          "net_operating_income": "15600.00",
+          "annual_free_cash_flow": "-38610.35",
+          "annual_re_appreciation": "14500.00",
+          "operating_expenses_annual": "14400.00",
+          "annual_total_re_return_pct": "-0.1230"
+        },
+        "mid": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "-0.1571",
+          "forecasted_revenue": "45000.00",
+          "principal_pay_down": "5158.15",
+          "debt_service_annual": "54210.35",
+          "net_operating_income": "30000.00",
+          "annual_free_cash_flow": "-24210.35",
+          "annual_re_appreciation": "14500.00",
+          "operating_expenses_annual": "15000.00",
+          "annual_total_re_return_pct": "-0.0295"
+        },
+        "high": {
+          "co_hosting_fee": "0.00",
+          "cash_on_cash_pct": "-0.0637",
+          "forecasted_revenue": "60000.00",
+          "principal_pay_down": "5158.15",
+          "debt_service_annual": "54210.35",
+          "net_operating_income": "44400.00",
+          "annual_free_cash_flow": "-9810.35",
+          "annual_re_appreciation": "14500.00",
+          "operating_expenses_annual": "15600.00",
+          "annual_total_re_return_pct": "0.0639"
+        }
+      },
+      "y1_coc_incl_tax_savings": {
+        "low_pct": "-0.0345",
+        "mid_pct": "0.0590",
+        "high_pct": "0.1524"
+      },
+      "taxes": {
+        "land_assumptions_pct": "0.2000",
+        "sla_multiplier_pct": "0.2500",
+        "improvement_basis": "600000.00",
+        "estimated_short_life_assets": "150000.00",
+        "bonus_amount_pct": "0.6000",
+        "tax_rate_pct": "0.3700",
+        "y1_loss_from_depreciation": "90000.00",
+        "tax_savings": "33300.00"
+      },
+      "optimization_total": "20000.00",
+      "operating_expense_total": "1250.00",
+      "total_oop": "154125.00",
+      "prr": "0.0621",
+      "l_cash_on_cash": "-0.2505",
+      "m_cash_on_cash": "-0.1571",
+      "h_cash_on_cash": "-0.0637"
+    }
+  }
+]
